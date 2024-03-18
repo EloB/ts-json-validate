@@ -1,0 +1,24 @@
+{
+  "name": "ts-json-validate",
+  "license": "MIT",
+  "bin": {
+    "ts-json-validate": "./cli.js"
+  },
+  "files": [
+    "cli.js",
+    "dist"
+  ],
+  "scripts": {
+    "debug": "ts-json-validate -t Schema -f ~/Documents/heiland/monorepo/packages/heiland-feature-flags/src/Schema.ts hello.json",
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "commander": "^12.0.0",
+    "typescript": "^5.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.28"
+  },
+  "type": "module"
+}
